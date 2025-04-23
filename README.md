@@ -22,6 +22,63 @@ In this initial version, Moonshot can be used through several interfaces:
 
 </br>
 
+# AI Rater - Usage
+[Moonshot Library Python Notebook Examples](https://github.com/aiverify-foundation/moonshot/tree/main/examples/jupyter-notebook)
+
+### Introduction
+Before you start exploring Moonshot through jupyter notebook examples, it is essential to set up a proper working environment.
+
+You can do so by git cloning the Ardent Moonshot repository:
+
+```git clone https://github.com/aiverify-foundation/moonshot.git```
+
+# Pre-requisites
+## Running the convenience script to perform setup
+There is a convenience script jupyter_notebook_env_setup.sh that is created for Mac and Linux. This script is located in ```/path/to/moonshot/examples/jupyter-notebook/``` will assist user to perform the following:
+
+1. Create a virtual environment env in its current location.
+2. Activate the env virtual environment.
+3. Perform pip installation of moonshot and rich library requirements.
+4. Clone moonshot-data and install its requirements.
+5. Create a jupyter notebook server in the virtual environment.
+6. Launch the jupyter notebook server.
+
+After setting the right environment, you can start with the following tasks:
+1. Learn from the following Notebooks:
+   1. ```examples/jupyter-notebook/Moonshot - Benchmark Feature Walkthrough.ipynb```
+   2. ```examples/jupyter-notebook/Tutorial 1 - Basic Workflow - Execute a Benchmark.ipynb```
+   3. ```examples/jupyter-notebook/Tutorial 2 - Basic Workflow - Add your own test.ipynb```
+   4. ```examples/jupyter-notebook/Tutorial 4 - Advanced Workflow - Test Custom Application.ipynb```
+2. After learning from the Notebooks go to ```/path/to/moonshot/examples/jupyter-notebook```
+3. Activate the env virtual environment.
+4. Run the commands:
+   1.  ```python3.11 -m moonshot -i moonshot-data -i moonshot-ui```
+   2.  ```source venv/bin/activate```
+   3.  ```python -m moonshot web```
+       1.  This will open a Moonshot web environment in ```http://localhost:3000/```
+
+### Important Folders:
+* ```/path/to/moonshot/examples/jupyter-notebook/moonshot-data/connectors```
+  * Every ```connector``` can have one or more ```connector-endpoint```
+  * Connectors let you 'connect' to your end-point with code
+  * Connector-endpoints is where you variables to connect are going to be (token, URI, etc.)
+*  ```/path/to/moonshot/examples/jupyter-notebook/moonshot-data/datasets```
+   *  The dataset folder let you save your datasets on ```.json``` format
+   *  A dataset is part of a recipe
+*  ```/path/to/moonshot/examples/jupyter-notebook/moonshot-data/recipes```
+   *  A recipe you can select the dataset and metrics that the recipe will evaluate.
+   *  You can change the grading scale
+   *  NOTE: metrics that are decimal shows a ``0`` on the Web UI. You need to download the results and run it on ```examples/jupyter-notebook/aigs_results_eda.ipynb```
+   *  If you want to create a cookbook you need to select multiple recipes
+*  ```/path/to/moonshot/examples/jupyter-notebook/moonshot-data/cookbooks```
+   *  A cookbook is a combination of recipes
+* ```/path/to/moonshot/examples/jupyter-notebook/moonshot-data/metrics```
+  * List of metrics that can be runned
+  * A recipe can have as many metrics as you want
+
+</br>
+
+# BELLOW HERE IS DOCUMENTATION FROM AI VERIFY MOONSHOT
 ## Getting Started
 </br>
 

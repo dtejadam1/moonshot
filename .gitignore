@@ -123,13 +123,13 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
-.venv
+# .env
+# .venv
 env/
-venv/
+# venv/
 ENV/
 env.bak/
-venv.bak/
+# venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -175,3 +175,7 @@ moonshot/data/sessions/*.json
 # build files
 dist/
 *.db
+
+# *.csv
+
+examples/jupyter-notebook/assets/Crime_Data_from_2020_to_Present.csv

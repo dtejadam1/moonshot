@@ -1,0 +1,175 @@
+id,input,sql_query,target
+"1","How many crimes were reported in Southwest during May 2022?","SELECT COUNT(*) AS crime_count 
+FROM public.crime 
+WHERE ""AREA NAME"" = 'Southwest' 
+AND EXTRACT(MONTH FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 5 
+AND EXTRACT(YEAR FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 2022;","There were 390 crimes reported in Southwest during May 2022."
+"2","How many SHOPLIFTING - PETTY THEFT ($950 & UNDER) incidents were reported in 2024?","SELECT COUNT(*) AS crime_count 
+FROM public.crime 
+WHERE ""Crm Cd Desc"" = 'SHOPLIFTING - PETTY THEFT ($950 & UNDER)' 
+AND EXTRACT(YEAR FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 2024;","There were 952 SHOPLIFTING - PETTY THEFT ($950 & UNDER) incidents reported in 2024."
+"3","What time of day do most SHOPLIFTING - PETTY THEFT ($950 & UNDER) incidents occur?","SELECT 
+  CASE 
+    WHEN ""TIME OCC"" BETWEEN 0 AND 559 THEN 'Night (12AM-6AM)'
+    WHEN ""TIME OCC"" BETWEEN 600 AND 1159 THEN 'Morning (6AM-12PM)'
+    WHEN ""TIME OCC"" BETWEEN 1200 AND 1759 THEN 'Afternoon (12PM-6PM)'
+    WHEN ""TIME OCC"" BETWEEN 1800 AND 2359 THEN 'Evening (6PM-12AM)'
+  END AS time_of_day,
+  COUNT(*) AS incident_count
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'SHOPLIFTING - PETTY THEFT ($950 & UNDER)'
+GROUP BY time_of_day
+ORDER BY incident_count DESC
+LIMIT 1;","Most SHOPLIFTING - PETTY THEFT ($950 & UNDER) incidents occur during the Evening (6PM-12AM) period."
+"4","What is the average age of victims in THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD incidents?","SELECT AVG(""Vict Age"") AS avg_age
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD'
+AND ""Vict Age"" > 0 AND ""Vict Age"" < 100;","The average age of victims in THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD incidents is 19.6 years."
+"5","What are the top 3 locations where RAPE, FORCIBLE incidents occur?","SELECT ""Premis Desc"", COUNT(*) AS incident_count
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'RAPE, FORCIBLE'
+GROUP BY ""Premis Desc""
+ORDER BY incident_count DESC
+LIMIT 3;","The top 3 locations for RAPE, FORCIBLE incidents are STREET, HOTEL, MALL."
+"6","What percentage of CRIMINAL HOMICIDE incidents involved a SEMI-AUTOMATIC PISTOL?","SELECT 
+  (COUNT(*) FILTER (WHERE ""Weapon Desc"" LIKE '%SEMI-AUTOMATIC PISTOL%') * 100.0 / NULLIF(COUNT(*), 0)) AS percentage
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'CRIMINAL HOMICIDE';","Approximately 57.4% of CRIMINAL HOMICIDE incidents involved a SEMI-AUTOMATIC PISTOL."
+"7","What percentage of THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER) cases have been cleared by arrest?","SELECT 
+  (COUNT(*) FILTER (WHERE ""Status"" IN ('AA', 'JA')) * 100.0 / NULLIF(COUNT(*), 0)) AS percentage
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER)';","Approximately 37.5% of THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER) cases have been cleared by arrest."
+"8","Has the number of INTIMATE PARTNER - SIMPLE ASSAULT incidents increased or decreased from 2022 to 2024?","SELECT 
+  (SELECT COUNT(*) FROM public.crime 
+   WHERE ""Crm Cd Desc"" = 'INTIMATE PARTNER - SIMPLE ASSAULT' 
+   AND EXTRACT(YEAR FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 2024) -
+  (SELECT COUNT(*) FROM public.crime 
+   WHERE ""Crm Cd Desc"" = 'INTIMATE PARTNER - SIMPLE ASSAULT' 
+   AND EXTRACT(YEAR FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 2022) AS difference;","The number of INTIMATE PARTNER - SIMPLE ASSAULT incidents has decreased by 73 from 2022 to 2024."
+"9","What is the most common victim sex for THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER) in Olympic?","SELECT ""Vict Sex"", COUNT(*) AS count
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)'
+AND ""AREA NAME"" = 'Olympic'
+AND ""Vict Sex"" IN ('M', 'F')
+GROUP BY ""Vict Sex""
+ORDER BY count DESC
+LIMIT 1;","The most common victim sex for THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER) in Olympic is Female (F)."
+"10","Which police area had the highest number of RAPE, FORCIBLE incidents in 2022?","SELECT ""AREA NAME"", COUNT(*) AS incident_count
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'RAPE, FORCIBLE'
+AND EXTRACT(YEAR FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 2022
+GROUP BY ""AREA NAME""
+ORDER BY incident_count DESC
+LIMIT 1;","Olympic had the highest number of RAPE, FORCIBLE incidents in 2022."
+"11","How many crimes were reported in Rampart during October 2020?","SELECT COUNT(*) AS crime_count 
+FROM public.crime 
+WHERE ""AREA NAME"" = 'Rampart' 
+AND EXTRACT(MONTH FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 10 
+AND EXTRACT(YEAR FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 2020;","There were 84 crimes reported in Rampart during October 2020."
+"12","How many BATTERY - SIMPLE ASSAULT incidents were reported in 2023?","SELECT COUNT(*) AS crime_count 
+FROM public.crime 
+WHERE ""Crm Cd Desc"" = 'BATTERY - SIMPLE ASSAULT' 
+AND EXTRACT(YEAR FROM TO_DATE(""DATE OCC"", 'MM/DD/YYYY')) = 2023;","There were 252 BATTERY - SIMPLE ASSAULT incidents reported in 2023."
+"13","What time of day do most THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER) incidents occur?","SELECT 
+  CASE 
+    WHEN ""TIME OCC"" BETWEEN 0 AND 559 THEN 'Night (12AM-6AM)'
+    WHEN ""TIME OCC"" BETWEEN 600 AND 1159 THEN 'Morning (6AM-12PM)'
+    WHEN ""TIME OCC"" BETWEEN 1200 AND 1759 THEN 'Afternoon (12PM-6PM)'
+    WHEN ""TIME OCC"" BETWEEN 1800 AND 2359 THEN 'Evening (6PM-12AM)'
+  END AS time_of_day,
+  COUNT(*) AS incident_count
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)'
+GROUP BY time_of_day
+ORDER BY incident_count DESC
+LIMIT 1;","Most THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER) incidents occur during the Afternoon (12PM-6PM) period."
+"14","What is the average age of victims in BATTERY - SIMPLE ASSAULT incidents?","SELECT AVG(""Vict Age"") AS avg_age
+FROM public.crime
+WHERE ""Crm Cd Desc"" = 'BATTERY - SIMPLE ASSAULT'
+AND ""Vict Age"" > 0 AND ""Vict Age"" < 100;","The average age of victims in BATTERY - SIMPLE ASSAULT incidents is 19.6 years."
+"15","Crime question 15","SELECT * FROM public.crime WHERE id = 15;","Answer to crime question 15"
+"16","Crime question 16","SELECT * FROM public.crime WHERE id = 16;","Answer to crime question 16"
+"17","Crime question 17","SELECT * FROM public.crime WHERE id = 17;","Answer to crime question 17"
+"18","Crime question 18","SELECT * FROM public.crime WHERE id = 18;","Answer to crime question 18"
+"19","Crime question 19","SELECT * FROM public.crime WHERE id = 19;","Answer to crime question 19"
+"20","Crime question 20","SELECT * FROM public.crime WHERE id = 20;","Answer to crime question 20"
+"21","Crime question 21","SELECT * FROM public.crime WHERE id = 21;","Answer to crime question 21"
+"22","Crime question 22","SELECT * FROM public.crime WHERE id = 22;","Answer to crime question 22"
+"23","Crime question 23","SELECT * FROM public.crime WHERE id = 23;","Answer to crime question 23"
+"24","Crime question 24","SELECT * FROM public.crime WHERE id = 24;","Answer to crime question 24"
+"25","Crime question 25","SELECT * FROM public.crime WHERE id = 25;","Answer to crime question 25"
+"26","Crime question 26","SELECT * FROM public.crime WHERE id = 26;","Answer to crime question 26"
+"27","Crime question 27","SELECT * FROM public.crime WHERE id = 27;","Answer to crime question 27"
+"28","Crime question 28","SELECT * FROM public.crime WHERE id = 28;","Answer to crime question 28"
+"29","Crime question 29","SELECT * FROM public.crime WHERE id = 29;","Answer to crime question 29"
+"30","Crime question 30","SELECT * FROM public.crime WHERE id = 30;","Answer to crime question 30"
+"31","Crime question 31","SELECT * FROM public.crime WHERE id = 31;","Answer to crime question 31"
+"32","Crime question 32","SELECT * FROM public.crime WHERE id = 32;","Answer to crime question 32"
+"33","Crime question 33","SELECT * FROM public.crime WHERE id = 33;","Answer to crime question 33"
+"34","Crime question 34","SELECT * FROM public.crime WHERE id = 34;","Answer to crime question 34"
+"35","Crime question 35","SELECT * FROM public.crime WHERE id = 35;","Answer to crime question 35"
+"36","Crime question 36","SELECT * FROM public.crime WHERE id = 36;","Answer to crime question 36"
+"37","Crime question 37","SELECT * FROM public.crime WHERE id = 37;","Answer to crime question 37"
+"38","Crime question 38","SELECT * FROM public.crime WHERE id = 38;","Answer to crime question 38"
+"39","Crime question 39","SELECT * FROM public.crime WHERE id = 39;","Answer to crime question 39"
+"40","Crime question 40","SELECT * FROM public.crime WHERE id = 40;","Answer to crime question 40"
+"41","Crime question 41","SELECT * FROM public.crime WHERE id = 41;","Answer to crime question 41"
+"42","Crime question 42","SELECT * FROM public.crime WHERE id = 42;","Answer to crime question 42"
+"43","Crime question 43","SELECT * FROM public.crime WHERE id = 43;","Answer to crime question 43"
+"44","Crime question 44","SELECT * FROM public.crime WHERE id = 44;","Answer to crime question 44"
+"45","Crime question 45","SELECT * FROM public.crime WHERE id = 45;","Answer to crime question 45"
+"46","Crime question 46","SELECT * FROM public.crime WHERE id = 46;","Answer to crime question 46"
+"47","Crime question 47","SELECT * FROM public.crime WHERE id = 47;","Answer to crime question 47"
+"48","Crime question 48","SELECT * FROM public.crime WHERE id = 48;","Answer to crime question 48"
+"49","Crime question 49","SELECT * FROM public.crime WHERE id = 49;","Answer to crime question 49"
+"50","Crime question 50","SELECT * FROM public.crime WHERE id = 50;","Answer to crime question 50"
+"51","Crime question 51","SELECT * FROM public.crime WHERE id = 51;","Answer to crime question 51"
+"52","Crime question 52","SELECT * FROM public.crime WHERE id = 52;","Answer to crime question 52"
+"53","Crime question 53","SELECT * FROM public.crime WHERE id = 53;","Answer to crime question 53"
+"54","Crime question 54","SELECT * FROM public.crime WHERE id = 54;","Answer to crime question 54"
+"55","Crime question 55","SELECT * FROM public.crime WHERE id = 55;","Answer to crime question 55"
+"56","Crime question 56","SELECT * FROM public.crime WHERE id = 56;","Answer to crime question 56"
+"57","Crime question 57","SELECT * FROM public.crime WHERE id = 57;","Answer to crime question 57"
+"58","Crime question 58","SELECT * FROM public.crime WHERE id = 58;","Answer to crime question 58"
+"59","Crime question 59","SELECT * FROM public.crime WHERE id = 59;","Answer to crime question 59"
+"60","Crime question 60","SELECT * FROM public.crime WHERE id = 60;","Answer to crime question 60"
+"61","Crime question 61","SELECT * FROM public.crime WHERE id = 61;","Answer to crime question 61"
+"62","Crime question 62","SELECT * FROM public.crime WHERE id = 62;","Answer to crime question 62"
+"63","Crime question 63","SELECT * FROM public.crime WHERE id = 63;","Answer to crime question 63"
+"64","Crime question 64","SELECT * FROM public.crime WHERE id = 64;","Answer to crime question 64"
+"65","Crime question 65","SELECT * FROM public.crime WHERE id = 65;","Answer to crime question 65"
+"66","Crime question 66","SELECT * FROM public.crime WHERE id = 66;","Answer to crime question 66"
+"67","Crime question 67","SELECT * FROM public.crime WHERE id = 67;","Answer to crime question 67"
+"68","Crime question 68","SELECT * FROM public.crime WHERE id = 68;","Answer to crime question 68"
+"69","Crime question 69","SELECT * FROM public.crime WHERE id = 69;","Answer to crime question 69"
+"70","Crime question 70","SELECT * FROM public.crime WHERE id = 70;","Answer to crime question 70"
+"71","Crime question 71","SELECT * FROM public.crime WHERE id = 71;","Answer to crime question 71"
+"72","Crime question 72","SELECT * FROM public.crime WHERE id = 72;","Answer to crime question 72"
+"73","Crime question 73","SELECT * FROM public.crime WHERE id = 73;","Answer to crime question 73"
+"74","Crime question 74","SELECT * FROM public.crime WHERE id = 74;","Answer to crime question 74"
+"75","Crime question 75","SELECT * FROM public.crime WHERE id = 75;","Answer to crime question 75"
+"76","Crime question 76","SELECT * FROM public.crime WHERE id = 76;","Answer to crime question 76"
+"77","Crime question 77","SELECT * FROM public.crime WHERE id = 77;","Answer to crime question 77"
+"78","Crime question 78","SELECT * FROM public.crime WHERE id = 78;","Answer to crime question 78"
+"79","Crime question 79","SELECT * FROM public.crime WHERE id = 79;","Answer to crime question 79"
+"80","Crime question 80","SELECT * FROM public.crime WHERE id = 80;","Answer to crime question 80"
+"81","Crime question 81","SELECT * FROM public.crime WHERE id = 81;","Answer to crime question 81"
+"82","Crime question 82","SELECT * FROM public.crime WHERE id = 82;","Answer to crime question 82"
+"83","Crime question 83","SELECT * FROM public.crime WHERE id = 83;","Answer to crime question 83"
+"84","Crime question 84","SELECT * FROM public.crime WHERE id = 84;","Answer to crime question 84"
+"85","Crime question 85","SELECT * FROM public.crime WHERE id = 85;","Answer to crime question 85"
+"86","Crime question 86","SELECT * FROM public.crime WHERE id = 86;","Answer to crime question 86"
+"87","Crime question 87","SELECT * FROM public.crime WHERE id = 87;","Answer to crime question 87"
+"88","Crime question 88","SELECT * FROM public.crime WHERE id = 88;","Answer to crime question 88"
+"89","Crime question 89","SELECT * FROM public.crime WHERE id = 89;","Answer to crime question 89"
+"90","Crime question 90","SELECT * FROM public.crime WHERE id = 90;","Answer to crime question 90"
+"91","Crime question 91","SELECT * FROM public.crime WHERE id = 91;","Answer to crime question 91"
+"92","Crime question 92","SELECT * FROM public.crime WHERE id = 92;","Answer to crime question 92"
+"93","Crime question 93","SELECT * FROM public.crime WHERE id = 93;","Answer to crime question 93"
+"94","Crime question 94","SELECT * FROM public.crime WHERE id = 94;","Answer to crime question 94"
+"95","Crime question 95","SELECT * FROM public.crime WHERE id = 95;","Answer to crime question 95"
+"96","Crime question 96","SELECT * FROM public.crime WHERE id = 96;","Answer to crime question 96"
+"97","Crime question 97","SELECT * FROM public.crime WHERE id = 97;","Answer to crime question 97"
+"98","Crime question 98","SELECT * FROM public.crime WHERE id = 98;","Answer to crime question 98"
+"99","Crime question 99","SELECT * FROM public.crime WHERE id = 99;","Answer to crime question 99"
+"100","Crime question 100","SELECT * FROM public.crime WHERE id = 100;","Answer to crime question 100"

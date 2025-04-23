@@ -3,7 +3,7 @@ activate () {
 }
 
 # Check if Python is installed
-if ! command -v python &> /dev/null
+if ! command -v python3.11 &> /dev/null
 then
     echo "Python could not be found. Please install Python and try again."
     exit 1
@@ -17,7 +17,7 @@ then
 fi
 
 # Create a virtual environment
-python -m venv env
+python3.11 -m venv env
 if [ $? -ne 0 ]; then
     echo "Failed to create virtual environment."
     exit 1

@@ -1,0 +1,402 @@
+[
+  {
+    "question": "How many incidents of 'Vehicle - Stolen' were reported in Wilshire in 2020?",
+    "answer": "There were no reported incidents of \"Vehicle - Stolen\" in Wilshire in 2020."
+  },
+  {
+    "question": "What is the total number of 'Burglary from Vehicle' cases reported in the Central area?",
+    "answer": "The total number of \"Burglary from Vehicle\" cases reported in the Central area is 9,695."
+  },
+  {
+    "question": "In which LAPD area was 'Bike - Stolen' most frequently reported?",
+    "answer": "The LAPD area where \"Bike - Stolen\" was most frequently reported is \"Pacific\"."
+  },
+  {
+    "question": "How many crimes occurred between 6:00 PM and 12:00 AM across all areas?",
+    "answer": "A total of 314,140 crimes occurred between 6:00 PM and 12:00 AM across all areas."
+  },
+  {
+    "question": "What percentage of crimes involved the use of a weapon?",
+    "answer": "100% of the crimes involved the use of a weapon."
+  },
+  {
+    "question": "During which month was the highest number of crimes reported?",
+    "answer": "The highest number of crimes was reported in January, with a total of 90,772 crimes."
+  },
+  {
+    "question": "How many crimes were reported on weekends compared to weekdays?",
+    "answer": "The number of crimes reported on weekdays is 718,062, while the number of crimes reported on weekends is 287,136."
+  },
+  {
+    "question": "What time of day sees the highest crime rates in the Southwest area?",
+    "answer": "The time of day that sees the highest crime rates in the Southwest area is 12:00 PM, with 1,777 reported incidents."
+  },
+  {
+    "question": "How many crimes were reported between midnight and 6 AM?",
+    "answer": "A total of 161,937 crimes were reported between midnight and 6 AM."
+  },
+  {
+    "question": "What is the average reporting delay between DATE OCC and Date Rptd?",
+    "answer": "The average reporting delay between the occurrence date (\"DATE OCC\") and the reported date (\"Date Rptd\") is approximately 12.17 days."
+  },
+  {
+    "question": "Which LAPD division (Area Name) reported the highest number of crimes?",
+    "answer": "The LAPD division with the highest number of reported crimes is \"Central,\" with a total of 69,674 crimes."
+  },
+  {
+    "question": "What are the top three cross streets where crimes occur most frequently?",
+    "answer": "The top three cross streets where crimes occur most frequently are:\n\n1. **Broadway** with 2,487 reported crimes.\n2. **Figueroa Street** with 1,934 reported crimes.\n3. **Figueroa** with 1,646 reported crimes."
+  },
+  {
+    "question": "In which geographical area were most bike thefts reported?",
+    "answer": "The geographical areas with the most reported bike thefts are:\n\n1. Pacific - 2,306 thefts\n2. Southwest - 2,074 thefts\n3. West LA - 1,346 thefts\n4. Central - 1,070 thefts\n5. Hollywood - 556 thefts"
+  },
+  {
+    "question": "How many incidents were reported in the 'Central' area during March 2020?",
+    "answer": "There were 969 incidents reported in the \"Central\" area during March 2020."
+  },
+  {
+    "question": "What is the crime density near downtown Los Angeles based on latitude and longitude?",
+    "answer": "The crime density near downtown Los Angeles, based on latitude and longitude, shows a total of 85,034 reported crimes. The average latitude is approximately 34.0441, and the average longitude is approximately -118.2525."
+  },
+  {
+    "question": "What is the most common type of crime reported?",
+    "answer": "The most common type of crime reported is \"VEHICLE - STOLEN,\" with a total of 115,247 occurrences."
+  },
+  {
+    "question": "How many incidents involved 'Assault with a Deadly Weapon'?",
+    "answer": "There are no incidents recorded in the database involving \"Assault with a Deadly Weapon\"."
+  },
+  {
+    "question": "How frequent were cases of 'Burglary from Vehicle' compared to 'Grand Theft Auto'?",
+    "answer": "The database contains 63,518 cases of \"Burglary from Vehicle.\" However, there are no recorded cases of \"Grand Theft Auto\" in the dataset."
+  },
+  {
+    "question": "What proportion of crimes were classified as 'Part 1' vs. 'Part 2'?",
+    "answer": "The proportion of crimes classified as \"Part 1\" vs. \"Part 2\" is as follows:\n\n- \"Part 1\" crimes: 602,834 (approximately 60%)\n- \"Part 2\" crimes: 402,364 (approximately 40%)"
+  },
+  {
+    "question": "Which crimes are most associated with a weapon being used?",
+    "answer": "The crimes most associated with a weapon being used are:\n\n1. **Battery - Simple Assault** (74,846 instances)\n2. **Assault with Deadly Weapon, Aggravated Assault** (53,529 instances)\n3. **Intimate Partner - Simple Assault** (46,605 instances)\n4. **Robbery** (32,313 instances)\n5. **Criminal Threats - No Weapon Displayed** (19,202 instances)"
+  },
+  {
+    "question": "What is the average age of crime victims?",
+    "answer": "The average age of crime victims is approximately 39.5 years."
+  },
+  {
+    "question": "What is the gender distribution of crime victims?",
+    "answer": "The gender distribution of crime victims is as follows:\n\n- Male (M): 403,916 victims\n- Female (F): 358,599 victims\n- Unknown/Other (X): 97,786 victims\n- Hispanic (H): 114 victims\n- Not specified (-): 1 victim\n- Missing data (None): 144,782 victims"
+  },
+  {
+    "question": "What is the racial/ethnic background distribution of victims?",
+    "answer": "The racial/ethnic background distribution of victims is as follows:\n\n- Hispanic (H): 296,437 victims\n- White (W): 201,451 victims\n- Unknown/Not Specified: 144,794 victims\n- Black (B): 135,823 victims\n- Other (X): 106,699 victims\n- Other Asian (O): 78,010 victims\n- Asian (A): 21,340 victims\n- Korean (K): 5,991 victims\n- Filipino (F): 4,838 victims\n- Chinese (C): 4,631 victims"
+  },
+  {
+    "question": "How often are minors (under 18) victims of crime?",
+    "answer": "There have been 295,142 reported cases where minors (under 18 years old) were victims of crime."
+  },
+  {
+    "question": "Which crimes most commonly involve female victims?",
+    "answer": "The crimes most commonly involving female victims are:\n\n1. **Theft of Identity** (35,804 cases)\n2. **Intimate Partner - Simple Assault** (35,508 cases)\n3. **Battery - Simple Assault** (35,146 cases)\n4. **Burglary from Vehicle** (26,549 cases)\n5. **Theft Plain - Petty ($950 & Under)** (23,311 cases)"
+  },
+  {
+    "question": "Which weapon is most commonly used in assaults?",
+    "answer": "The most commonly used weapon in assaults is \"STRONG-ARM (HANDS, FIST, FEET OR BODILY FORCE)\", with 132,014 occurrences."
+  },
+  {
+    "question": "How many crimes involved firearms?",
+    "answer": "There were 7,551 crimes that involved firearms."
+  },
+  {
+    "question": "What percentage of robberies involved a deadly weapon?",
+    "answer": "Out of 37,161 robberies, 37,151 involved a deadly weapon. This means approximately 99.97% of robberies involved a deadly weapon."
+  },
+  {
+    "question": "Which weapon category had the highest number of associated incidents?",
+    "answer": "The weapon category with the highest number of associated incidents is \"STRONG-ARM (HANDS, FIST, FEET OR BODILY FORCE)\" with 174,777 incidents."
+  },
+  {
+    "question": "How many assaults involved no weapon (bare hands or none specified)?",
+    "answer": "There were 136 assaults involving no weapon (bare hands or none specified)."
+  },
+  {
+    "question": "What percentage of crimes resulted in an arrest?",
+    "answer": "Out of a total of 1,005,198 crimes, none resulted in an arrest. Therefore, the percentage of crimes that resulted in an arrest is 0%."
+  },
+  {
+    "question": "How many cases remain 'Under Investigation'?",
+    "answer": "There are 803,946 cases that remain \"Under Investigation\"."
+  },
+  {
+    "question": "Which crime type has the highest clearance (solved) rate?",
+    "answer": "The crime type with the highest clearance (solved) rate is \"CHILD PORNOGRAPHY,\" with a clearance rate of approximately 0.36%."
+  },
+  {
+    "question": "What is the most common final status for theft cases?",
+    "answer": "The most common final status for theft cases is \"Invest Cont\" (Investigation Continued), with 269,716 occurrences. Other statuses include:\n\n- \"Adult Arrest\" with 8,192 occurrences.\n- \"Adult Other\" with 6,726 occurrences.\n- \"Juv Other\" (Juvenile Other) with 252 occurrences.\n- \"Juv Arrest\" (Juvenile Arrest) with 231 occurrences."
+  },
+  {
+    "question": "How often is 'Adult Arrest' the final case status?",
+    "answer": "The final case status \"Adult Arrest\" occurs 86,877 times in the database."
+  },
+  {
+    "question": "How has bike theft changed over the year?",
+    "answer": "Bike thefts have changed over the years as follows:\n\n- **2020**: 2,184 thefts\n- **2021**: 2,397 thefts (increase)\n- **2022**: 2,471 thefts (slight increase)\n- **2023**: 2,082 thefts (decrease)\n- **2024**: 2,000 thefts (slight decrease)\n- **2025**: 38 thefts (data likely incomplete for this year)\n\nThe trend shows an increase in bike thefts from 2020 to 2022, followed by a decrease in 2023 and 2024."
+  },
+  {
+    "question": "Are vehicle thefts more common during certain months?",
+    "answer": "Vehicle thefts appear to be more common in certain months. Based on the data, the months with the highest number of thefts are:\n\n1. January (26,433 thefts)\n2. February (25,274 thefts)\n3. March (24,968 thefts)\n\nOther months, such as December, October, and November, also show relatively high theft counts, but January stands out as the peak month for vehicle thefts."
+  },
+  {
+    "question": "What trends can be observed in violent crimes throughout the year?",
+    "answer": "The trends in violent crimes throughout the year, based on the data, are as follows:\n\n- **January**: 21,836 incidents\n- **February**: 20,328 incidents\n- **March**: 20,867 incidents\n- **April**: 19,853 incidents\n- **May**: 19,704 incidents\n- **June**: 19,028 incidents\n- **July**: 20,311 incidents\n- **August**: 20,305 incidents\n- **September**: 19,290 incidents\n- **October**: 19,721 incidents\n- **November**: 17,529 incidents\n- **December**: 17,202 incidents\n\nThe data shows that violent crimes tend to peak in the early months of the year (January and March) and gradually decrease towards the end of the year (November and December)."
+  },
+  {
+    "question": "Is there a seasonal variation in burglary reports?",
+    "answer": "Yes, there is a seasonal variation in burglary reports. The number of burglaries varies by month:\n\n- **January**: 12,495 reports\n- **February**: 11,275 reports\n- **March**: 11,211 reports\n- **April**: 10,377 reports\n- **May**: 10,297 reports\n- **June**: 10,041 reports\n- **July**: 9,988 reports\n- **August**: 9,653 reports\n- **September**: 9,371 reports\n- **October**: 10,223 reports\n- **November**: 10,343 reports\n- **December**: 10,781 reports\n\nBurglary reports tend to be higher in the winter months, particularly in January, and lower during the summer months."
+  },
+  {
+    "question": "Which month saw the highest spike in 'Assault with a Deadly Weapon' incidents?",
+    "answer": "The month with the highest spike in \"Assault with a Deadly Weapon\" incidents is not available in the database. It seems there might be no records matching the specified criteria. If you have additional details or want to refine the query, let me know!"
+  },
+  {
+    "question": "Which crime type dominates the Central LAPD division?",
+    "answer": "The crime type that dominates the Central LAPD division is \"Burglary from Vehicle,\" with a total of 9,695 reported incidents."
+  },
+  {
+    "question": "What are the top five most common crimes in Wilshire?",
+    "answer": "The top five most common crimes in Wilshire are:\n\n1. **Vehicle - Stolen**: 4,221 occurrences\n2. **Burglary**: 3,706 occurrences\n3. **Shoplifting - Petty Theft ($950 & Under)**: 3,509 occurrences\n4. **Burglary from Vehicle**: 3,365 occurrences\n5. **Theft Plain - Petty ($950 & Under)**: 3,272 occurrences"
+  },
+  {
+    "question": "How many assaults were reported in the Southwest area?",
+    "answer": "There were 12,586 assaults reported in the Southwest area."
+  },
+  {
+    "question": "In which area were the most incidents involving weapons reported?",
+    "answer": "The area with the most incidents involving weapons reported is \"77th Street,\" with a total of 29,089 incidents."
+  },
+  {
+    "question": "How does crime in the Central area compare to crime in Wilshire?",
+    "answer": "The Central area has reported 69,674 crimes, while the Wilshire area has reported 48,240 crimes. This indicates that the Central area has a significantly higher number of crimes compared to Wilshire."
+  },
+  {
+    "question": "On which days of the week are crimes most frequently reported?",
+    "answer": "Crimes are most frequently reported on the following days of the week:\n\n1. Monday: 158,193 reports\n2. Tuesday: 151,034 reports\n3. Wednesday: 149,381 reports\n4. Thursday: 146,014 reports\n5. Friday: 143,890 reports\n6. Saturday: 129,375 reports\n7. Sunday: 127,311 reports\n\nMonday has the highest number of reported crimes."
+  },
+  {
+    "question": "How does crime volume differ between weekdays and weekends?",
+    "answer": "The crime volume differs significantly between weekdays and weekends:\n\n- **Weekdays**: 718,062 reported crimes\n- **Weekends**: 287,136 reported crimes\n\nThis indicates that crime occurrences are higher on weekdays compared to weekends."
+  },
+  {
+    "question": "What are the crime patterns during holidays like July 4th or New Year's?",
+    "answer": "Here are some crime patterns observed during holidays like July 4th and New Year's Day:\n\n1. **July 4th**:\n   - **Vandalism - Felony ($400 & Over, All Church Vandalisms)** in the Pacific area.\n   - **Theft-Grand ($950.01 & Over)** in the Newton area.\n\n2. **New Year's Day**:\n   - **Shoplifting - Petty Theft ($950 & Under)** in the Topanga area.\n   - **Burglary** in the N Hollywood and Central areas.\n   - **Vandalism - Felony ($400 & Over, All Church Vandalisms)** in the Rampart area.\n   - **Lewd Conduct** in the Central area.\n   - **Trespassing** in the Central area.\n   - **Battery - Simple Assault** in the Southeast area.\n   - **Theft-Grand ($950.01 & Over)** in the Northeast area.\n\nThese crimes span various categories, including theft, vandalism, burglary, and assault, and occur across different areas of the city."
+  },
+  {
+    "question": "Are late-night crimes (after midnight) more common on weekends?",
+    "answer": "The query results show late-night crimes (occurring between midnight and 6:00 AM) along with the day of the week they occurred. The day of the week is represented numerically, where:\n\n- 0 = Sunday\n- 1 = Monday\n- 2 = Tuesday\n- 3 = Wednesday\n- 4 = Thursday\n- 5 = Friday\n- 6 = Saturday\n\nFrom the sample data:\n- Crimes occurred on Saturday (6), Sunday (0), Monday (1), Thursday (4), and Friday (5).\n- There are multiple occurrences on weekends (Saturday and Sunday).\n\nTo determine if late-night crimes are more common on weekends, I would need to calculate the total number of such crimes for each day of the week. Would you like me to proceed with this analysis?"
+  },
+  {
+    "question": "During which hours are car thefts most likely to occur?",
+    "answer": "Car thefts are most likely to occur during the following hours:\n\n1. **6:00 PM (1800)** - 5,986 thefts\n2. **8:00 PM (2000)** - 5,855 thefts\n3. **10:00 PM (2200)** - 5,753 thefts\n4. **7:00 PM (1900)** - 5,460 thefts\n5. **9:00 PM (2100)** - 5,321 thefts\n6. **5:00 PM (1700)** - 5,034 thefts\n7. **11:00 PM (2300)** - 4,013 thefts\n8. **4:00 PM (1600)** - 3,699 thefts\n9. **12:00 PM (1200)** - 3,676 thefts\n10. **3:00 PM (1500)** - 3,296 thefts\n\nEvening hours, particularly between 6:00 PM and 10:00 PM, are the most common times for car thefts."
+  },
+  {
+    "question": "How often does 'Assault with a Deadly Weapon' occur compared to simple assault?",
+    "answer": "The query results show the frequency of \"Assault with a Deadly Weapon\" and \"Simple Assault\" occurrences:\n\n- **Assault with a Deadly Weapon**: [Count from the database]\n- **Simple Assault**: [Count from the database]\n\nThis comparison highlights the relative occurrence of these two types of assaults. Let me know if you'd like further analysis or details!"
+  },
+  {
+    "question": "How common are 'Homicide' cases in the dataset?",
+    "answer": "There are 1,568 \"Homicide\" cases recorded in the dataset."
+  },
+  {
+    "question": "What percentage of crimes are classified as 'serious' felonies?",
+    "answer": "Out of a total of 1,005,198 crimes, 602,834 are classified as \"serious\" felonies. This means approximately 59.96% of crimes are serious felonies."
+  },
+  {
+    "question": "Which serious crime types show an increasing trend?",
+    "answer": "The serious crime types showing an increasing trend over the years include:\n\n1. **Brandish Weapon**: The number of incidents has steadily increased from 3,086 in 2020 to 3,604 in 2023.\n2. **Burglary**: The number of incidents rose from 12,837 in 2020 to 14,289 in 2023.\n3. **Burglary, Attempted**: The number of incidents increased from 923 in 2020 to 1,015 in 2023.\n4. **Burglary from Vehicle**: The number of incidents grew from 12,714 in 2020 to 14,232 in 2022.\n5. **Vehicle - Stolen**: The number of incidents increased from 20,772 in 2020 to 24,746 in 2022.\n\nThese trends indicate a rise in certain types of serious crimes over the years."
+  },
+  {
+    "question": "How many homicide cases were reported in 2020?",
+    "answer": "There were 352 reported homicide cases in 2020."
+  },
+  {
+    "question": "What is the age group most frequently targeted in thefts?",
+    "answer": "The age group most frequently targeted in thefts is individuals with an age recorded as 0 (likely indicating missing or unspecified data), with 72,595 occurrences. Among specified ages, the most targeted groups are:\n\n- Age 35: 7,168 occurrences\n- Age 29: 6,546 occurrences\n- Age 30: 6,527 occurrences\n- Age 31: 6,346 occurrences"
+  },
+  {
+    "question": "Are males or females more frequently victims of robbery?",
+    "answer": "Males are more frequently victims of robbery, with 22,260 reported cases, compared to 8,817 cases for females. There are also 6,051 cases where the victim's sex is recorded as \"X,\" 29 cases with no recorded sex, and 4 cases with \"H\" as the sex descriptor."
+  },
+  {
+    "question": "What victim descent group faces the highest victimization rate for assaults?",
+    "answer": "The victim descent group that faces the highest victimization rate for assaults is \"H\" (likely Hispanic), with a total of 99,480 reported cases."
+  },
+  {
+    "question": "Which crime types have a higher proportion of younger victims?",
+    "answer": "The crime types with a higher proportion of younger victims, based on the average age of victims, are:\n\n1. **Failure to Disperse** - Average victim age: 0\n2. **Boat - Stolen** - Average victim age: 0\n3. **Vehicle - Stolen** - Average victim age: 0.12\n4. **Inciting a Riot** - Average victim age: 2\n5. **Lynching - Attempted** - Average victim age: 3.36\n6. **Lynching** - Average victim age: 4.82\n7. **Embezzlement, Grand Theft ($950.01 & Over)** - Average victim age: 5.38\n8. **Sex Offender Registrant Out of Compliance** - Average victim age: 5.81\n9. **Resisting Arrest** - Average victim age: 5.98\n10. **Failure to Yield** - Average victim age: 6.34\n\nThese crimes tend to involve very young victims, with some having an average victim age close to zero."
+  },
+  {
+    "question": "What trends are seen in crimes involving elderly victims?",
+    "answer": "Recent trends in crimes involving elderly victims (aged 65 and older) show a variety of offenses across different areas. Here are some examples:\n\n1. **Battery - Simple Assault** (Victim Age: 67) occurred in **Devonshire** on **2025-02-27**.\n2. **Criminal Threats - No Weapon Displayed** (Victim Age: 70) occurred in **Rampart** on **2025-01-27**.\n3. **Theft from Motor Vehicle - Grand ($950.01 and Over)** (Victim Age: 68) occurred in **West Valley** on **2025-01-24**.\n4. **Pickpocket** (Victim Age: 65) occurred in **Wilshire** on **2024-12-29**.\n5. **Burglary from Vehicle** (Victim Age: 69) occurred in **Rampart** on **2024-12-28**.\n6. **Theft of Identity** (Victim Age: 76) occurred in **Hollywood** on **2024-12-28**.\n\nThese crimes span various categories, including theft, assault, and identity-related offenses, and are distributed across multiple areas."
+  },
+  {
+    "question": "What premises type (home, street, commercial) sees the most crimes?",
+    "answer": "The premises type that sees the most crimes is \"STREET,\" with 261,389 reported incidents. Other notable premises types include:\n\n- \"SINGLE FAMILY DWELLING\" with 163,660 incidents.\n- \"MULTI-UNIT DWELLING (APARTMENT, DUPLEX, ETC)\" with 119,013 incidents.\n- \"PARKING LOT\" with 69,163 incidents.\n- \"OTHER BUSINESS\" with 47,649 incidents."
+  },
+  {
+    "question": "How many crimes occur at residential locations versus public spaces?",
+    "answer": "The data indicates that 261,389 crimes occurred at streets, which are public spaces. However, there is no data available for crimes at residential locations or other public spaces like parks or public buildings in the queried dataset."
+  },
+  {
+    "question": "What percentage of vehicle thefts happen in parking lots?",
+    "answer": "Out of 266,687 vehicle thefts, 41,590 occurred in parking lots. This means approximately 15.6% of vehicle thefts happen in parking lots."
+  },
+  {
+    "question": "Are burglaries more common in residential or commercial areas?",
+    "answer": "Burglaries are more common in residential areas compared to commercial ones. The most frequent locations for burglaries include:\n\n1. **Street**: 26,353 incidents\n2. **Single Family Dwelling**: 22,017 incidents\n3. **Parking Lot**: 14,767 incidents\n4. **Multi-Unit Dwelling (Apartment, Duplex, etc.)**: 11,185 incidents\n\nWhile commercial areas like \"Other Business\" (8,661 incidents) and \"Restaurant/Fast Food\" (3,381 incidents) also experience burglaries, residential locations such as single-family and multi-unit dwellings have higher counts."
+  },
+  {
+    "question": "How many crimes occurred near schools?",
+    "answer": "A total of 8,596 crimes occurred near schools."
+  },
+  {
+    "question": "Which Crime Code (Crm Cd) appears most frequently?",
+    "answer": "The Crime Code (Crm Cd) that appears most frequently is `510`, with a total of 115,247 occurrences."
+  },
+  {
+    "question": "How many unique crime codes are represented in the dataset?",
+    "answer": "There are 140 unique crime codes represented in the dataset."
+  },
+  {
+    "question": "What crime code is associated with most 'Part 1' crimes?",
+    "answer": "The crime code associated with the most \"Part 1\" crimes is 510, with a total of 115,247 occurrences."
+  },
+  {
+    "question": "Which two crime codes are most closely linked together in incidents?",
+    "answer": "The two crime codes most closely linked together in incidents are:\n\n1. Crime Code 230 and Crime Code 998, with 11,643 occurrences.\n2. Crime Code 310 and Crime Code 998, with 7,159 occurrences."
+  },
+  {
+    "question": "Are there any new crime codes introduced in 2020?",
+    "answer": "Yes, there were new crime codes reported in 2020. Here are some examples:\n\n1. **Crm_Cd: 110** - Criminal Homicide\n2. **Crm_Cd: 113** - Manslaughter, Negligent\n3. **Crm_Cd: 121** - Rape, Forcible\n4. **Crm_Cd: 122** - Rape, Attempted\n5. **Crm_Cd: 210** - Robbery\n\nIf you need more details or specific codes, let me know!"
+  },
+  {
+    "question": "How many incidents list multiple crime codes?",
+    "answer": "There are 69,159 incidents that list multiple crime codes."
+  },
+  {
+    "question": "How often are multiple victims recorded for one incident number (DR_NO)?",
+    "answer": "The query results indicate that there are incidents (identified by \"DR_NO\") with multiple victims recorded. However, the exact details of these incidents were not provided in the output. If you'd like, I can refine the query further or provide additional insights."
+  },
+  {
+    "question": "What percentage of reports have missing location data (LAT/LON)?",
+    "answer": "The percentage of reports with missing location data (LAT/LON) is 0%."
+  },
+  {
+    "question": "Are crimes involving unknown perpetrators categorized differently?",
+    "answer": "Crimes involving unknown perpetrators (where victim sex or descent is unspecified) are categorized under various statuses. These include:\n\n- **AA (Adult Arrest)**: Cases involving adult arrests.\n- **AO (Adult Other)**: Other cases involving adults.\n- **CC (UNK)**: Unknown status.\n- **IC (Invest Cont)**: Investigation continued.\n- **JA (Juv Arrest)**: Cases involving juvenile arrests.\n- **JO (Juv Other)**: Other cases involving juveniles.\n- **None (UNK)**: Unknown status description.\n\nThe categorization depends on the specific circumstances and the status assigned to the case."
+  },
+  {
+    "question": "How does the crime rate correlate with specific LAPD Reporting Districts?",
+    "answer": "The LAPD Reporting Districts with the highest crime rates are as follows:\n\n1. District 162: 5,403 crimes\n2. District 1494: 5,371 crimes\n3. District 645: 5,025 crimes\n4. District 182: 4,896 crimes\n5. District 646: 4,426 crimes\n6. District 2156: 4,144 crimes\n7. District 636: 3,953 crimes\n8. District 111: 3,856 crimes\n9. District 119: 3,677 crimes\n10. District 152: 3,278 crimes\n\nThese districts show significant variations in crime rates, indicating potential hotspots for criminal activity."
+  },
+  {
+    "question": "How many crimes have missing victim demographics?",
+    "answer": "There are 144,799 crimes with missing victim demographics."
+  },
+  {
+    "question": "What is the average response time (Date OCC vs. Date Rptd)?",
+    "answer": "The average response time between the occurrence date (DATE_OCC) and the reported date (Date_Rptd) is approximately 12.17 days."
+  },
+  {
+    "question": "What types of crimes most often involve unknown victims?",
+    "answer": "The types of crimes that most often involve unknown victims are:\n\n1. **Vehicle - Stolen** (114,903 occurrences)\n2. **Theft from Motor Vehicle - Petty ($950 & Under)** (25,031 occurrences)\n3. **Shoplifting - Petty Theft ($950 & Under)** (21,507 occurrences)\n4. **Burglary** (18,112 occurrences)\n5. **Vandalism - Felony ($400 & Over, All Church Vandalisms)** (14,719 occurrences)\n6. **Trespassing** (9,655 occurrences)\n7. **Theft - Grand ($950.01 & Over)** (7,507 occurrences)\n8. **Theft Plain - Petty ($950 & Under)** (6,778 occurrences)\n9. **Robbery** (6,495 occurrences)\n10. **Vandalism - Misdemeanor ($399 or Under)** (5,299 occurrences)\n\nThese crimes often involve situations where victim details such as age, sex, or descent are not recorded or applicable."
+  },
+  {
+    "question": "How often are drugs involved, based on crime descriptions?",
+    "answer": "There are 12 crimes in the database where drugs are mentioned in the crime descriptions or related codes."
+  },
+  {
+    "question": "Are there more thefts reported from commercial premises than residential ones?",
+    "answer": "The data shows that thefts are reported more frequently from residential premises than commercial ones. Specifically:\n\n- Residential premises such as \"SINGLE FAMILY DWELLING\" (51,000 thefts) and \"MULTI-UNIT DWELLING (APARTMENT, DUPLEX, ETC)\" (33,581 thefts) have higher counts compared to commercial premises like \"DEPARTMENT STORE\" (12,779 thefts) and \"OTHER BUSINESS\" (19,471 thefts).\n\nHowever, the most common location for thefts overall is \"STREET\" (54,587 thefts), which is neither strictly residential nor commercial."
+  },
+  {
+    "question": "How frequent is 'Grand Theft Auto' compared to 'Vehicle - Stolen'?",
+    "answer": "The query did not return any results for \"Grand Theft Auto\" or \"Vehicle - Stolen.\" It seems that the exact descriptions might differ in the database. Based on the schema, \"Vehicle - Stolen\" exists, but \"Grand Theft Auto\" might be described differently, such as \"THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER).\" Would you like me to refine the query to include similar descriptions?"
+  },
+  {
+    "question": "What makes/models of vehicles are most commonly stolen? (if available)",
+    "answer": "The most commonly stolen vehicles are associated with the following codes (Mocodes):\n\n1. **No specific Mocodes**: 114,699 incidents.\n2. **Mocode 1402**: 51 incidents.\n3. **Mocode 0344**: 33 incidents.\n4. **Mocode 1300 0344**: 11 incidents.\n5. **Mocode 1501**: 10 incidents.\n\nIt seems that many incidents do not have specific Mocodes associated with them. If you need further clarification or details about these codes, let me know!"
+  },
+  {
+    "question": "During what time period are vehicle-related crimes most common?",
+    "answer": "Vehicle-related crimes occur at various times throughout the day. Based on the data:\n\n- Common times include midday (e.g., 12:00 PM) and evening hours (e.g., 7:00 PM to 10:30 PM).\n- Early morning incidents (e.g., 2:30 AM and 6:00 AM) are also observed.\n\nThis suggests that vehicle-related crimes are distributed across different periods, with notable occurrences during midday and evening hours."
+  },
+  {
+    "question": "What is the most common method used in vehicle break-ins (weapons used)?",
+    "answer": "The most common methods (weapons used) in vehicle break-ins are:\n\n1. **No weapon specified** (78405 cases).\n2. **Unknown weapon/other weapon** (453 cases).\n3. **Strong-arm (hands, fist, feet, or bodily force)** (154 cases).\n4. **Unknown type cutting instrument** (43 cases).\n5. **Other cutting instrument** (15 cases)."
+  },
+  {
+    "question": "What areas report the highest vehicle-related crimes?",
+    "answer": "The areas reporting the highest vehicle-related crimes are:\n\n1. Central - 18,075 crimes\n2. Pacific - 17,862 crimes\n3. Newton - 14,388 crimes\n4. 77th Street - 14,360 crimes\n5. North Hollywood - 14,216 crimes"
+  },
+  {
+    "question": "Which type of premise (bar, street, parking lot, school) sees the highest assaults?",
+    "answer": "The type of premise that sees the highest number of assaults is \"Single Family Dwelling,\" with 40,542 reported incidents."
+  },
+  {
+    "question": "How common are crimes reported at hotels or motels?",
+    "answer": "There have been 7,752 crimes reported at locations described as hotels or motels."
+  },
+  {
+    "question": "How many incidents occurred inside vehicles?",
+    "answer": "There were 29,432 incidents that occurred inside vehicles."
+  },
+  {
+    "question": "Are parking lots or garages more prone to vehicle thefts?",
+    "answer": "Based on the data, vehicle thefts occur more frequently in parking lots compared to garages or carports. Here are the top locations for vehicle-related thefts:\n\n1. **Street**: 166,686 thefts\n2. **Parking Lot**: 41,571 thefts\n3. **Garage/Carport**: 12,115 thefts\n4. **Driveway**: 10,387 thefts\n5. **Parking Underground/Building**: 5,861 thefts\n\nParking lots are significantly more prone to vehicle thefts than garages or carports."
+  },
+  {
+    "question": "How common are residential burglaries compared to commercial ones?",
+    "answer": "Residential burglaries, such as those occurring in single-family dwellings (22,017 incidents) and multi-unit dwellings like apartments (11,185 incidents), are quite common. However, commercial burglaries also occur frequently, with locations like parking lots (14,767 incidents) and other businesses (8,661 incidents) being notable examples.\n\nResidential burglaries appear to be slightly more prevalent overall, especially when considering single-family and multi-unit dwellings combined."
+  },
+  {
+    "question": "How many cases have an unusually long delay between occurrence and reporting?",
+    "answer": "There are 59,032 cases with an unusually long delay (more than 30 days) between occurrence and reporting."
+  },
+  {
+    "question": "How many crimes have no weapon description despite being violent crimes?",
+    "answer": "There are 453,937 violent crimes in the database that have no weapon description."
+  },
+  {
+    "question": "Are there outlier cases with extremely young or old victims?",
+    "answer": "There are outlier cases with extremely young victims, including ages recorded as -4 and -3. These cases involve crimes such as \"BATTERY ON A FIREFIGHTER,\" \"BUNCO, GRAND THEFT,\" \"EMBEZZLEMENT, PETTY THEFT ($950 & UNDER),\" and \"SHOPLIFTING - PETTY THEFT ($950 & UNDER).\" The negative ages likely indicate data entry errors or special coding."
+  },
+  {
+    "question": "What is the earliest DATE OCC in the dataset?",
+    "answer": "The earliest occurrence date (DATE_OCC) in the dataset is January 1, 2020."
+  },
+  {
+    "question": "What is the latest Date Rptd in the dataset?",
+    "answer": "The latest reported date in the dataset is March 28, 2025."
+  },
+  {
+    "question": "How many incidents involve multiple charges (multiple Crm Cd fields populated)?",
+    "answer": "There are 1,005,198 incidents that involve multiple charges (where multiple \"Crm Cd\" fields are populated)."
+  },
+  {
+    "question": "Are certain crime types frequently reported together (e.g., assault + robbery)?",
+    "answer": "Certain crime types are frequently reported together. Here are the top crime types with multiple associated codes:\n\n1. **Assault with Deadly Weapon, Aggravated Assault** - 12,669 occurrences.\n2. **Burglary** - 7,540 occurrences.\n3. **Brandish Weapon** - 5,510 occurrences.\n4. **Robbery** - 4,917 occurrences.\n5. **Vandalism - Felony ($400 & Over, All Church Vandalisms)** - 3,884 occurrences.\n6. **Battery - Simple Assault** - 1,956 occurrences.\n7. **Intimate Partner - Aggravated Assault** - 1,919 occurrences.\n8. **Rape, Forcible** - 1,826 occurrences.\n9. **Discharge Firearms/Shots Fired** - 1,824 occurrences.\n10. **Burglary from Vehicle** - 1,803 occurrences.\n\nThese statistics suggest that crimes like assault and robbery are indeed frequently reported together or involve multiple associated codes."
+  },
+  {
+    "question": "How many incidents involved an attempted crime versus a completed one?",
+    "answer": "The incidents are categorized as follows:\n\n- **Adult Arrest**: 86,877 incidents\n- **Adult Other**: 109,255 incidents\n- **Invest Cont (Investigation Continued)**: 803,946 incidents\n- **Juvenile Arrest**: 3,249 incidents\n- **Juvenile Other**: 1,864 incidents\n- **Unknown (UNK)**: 7 incidents\n\nThis data does not explicitly differentiate between attempted and completed crimes. If you need further clarification or filtering, let me know!"
+  },
+  {
+    "question": "How often do violent crimes involve more than one assailant?",
+    "answer": "There are no recorded violent crime cases in the database that involve more than one assailant."
+  },
+  {
+    "question": "What crimes have the highest number of repeat occurrences at the same location?",
+    "answer": "The crimes with the highest number of repeat occurrences at the same location are:\n\n1. **Shoplifting - Petty Theft ($950 & Under)** at **11800 Santa Monica Blvd** with **1320 occurrences**.\n2. **Shoplifting - Petty Theft ($950 & Under)** at **700 S Figueroa St** with **1111 occurrences**.\n3. **Trespassing** at **800 N Alameda St** with **1017 occurrences**.\n4. **Shoplifting - Petty Theft ($950 & Under)** at **400 S La Brea Ave** with **882 occurrences**.\n5. **Trespassing** at **600 S Alvarado St** with **754 occurrences**."
+  }
+]
